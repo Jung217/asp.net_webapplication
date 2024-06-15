@@ -9,8 +9,10 @@ namespace WebApplication1.Pages
     {
         [BindProperty]
         public DataTable dataTable { get; set; }
+        public string guest { get; set; }
         public void OnGet()
         {
+            guest = "Geust";
             var connection = new SqliteConnection(@"data source=Database\MyDB.db");
             connection.Open();
 

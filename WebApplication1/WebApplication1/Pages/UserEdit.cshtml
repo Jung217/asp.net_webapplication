@@ -1,41 +1,91 @@
 ﻿@page
 @model WebApplication1.Pages.UserEditModel
 @{
+    ViewData["Title"] = "Edit";
 }
+<style>
+    body {
+        background-color: white;
+    }
 
-<form method="post">
-    <div>
-        <label style="width: 80px;">Id: </label>
+    #user_id, #user_password, #fullname, #comfirm_password, #username2, #password2, #user_name, #user_age, #sex {
+        width: 250px;
+        height: 35px;
+        margin: 10px;
+        color: #df5334;
+    }
+
+    h5 {
+        margin: 20px;
+        color: #a3a2a3;
+    }
+
+        h5:hover {
+            color: black;
+        }
+
+    #container2 {
+        margin: 50px;
+        padding: 10px;
+        width: 400px;
+        height: 450px;
+        background-color: white;
+        border-radius: 5px;
+        border-top: 10px solid #df5334;
+        box-shadow: 0 0px 70px rgba(0, 0, 0, 0.1);
+        position: relative;
+        margin: auto;
+        top: 100px;
+        text-align: center;
+    }
+
+    .submit {
+        color: white;
+        background: #df5334;
+        width: 200px;
+        height: 30px;
+        margin: 15px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 0px;
+    }
+
+        .submit:hover {
+            background: #db6937;
+        }
+
+    input {
+        padding: 5px;
+        border: none;
+        border: solid 1px #ccc;
+        border-radius: 5px;
+    }
+</style>
+<div id="container2">
+
+    <h3 style="margin: 20px; color: #df5334;">編輯 Edit</h3>
+
+    <form method="post">
         <input asp-for="user_id" readonly />
         <span asp-validation-for="user_id" style="color:red;"></span>
-    </div>
-    <div>
-        <label style="width: 80px;">Password: </label>
-        <input asp-for="user_password" />
+        <div class="tab"></div>
+        <input asp-for="user_password" placeholder="密碼" />
         <span asp-validation-for="user_password" style="color:red;"></span>
-    </div>
-    <div>
-        <label style="width: 80px;">Name: </label>
-        <input asp-for="user_name" />
-    </div>
-    <div>
-        <label style="width: 80px;">Age: </label>
-        <input asp-for="user_age" />
-    </div>
-    <div>
-        <label style="width: 80px;">Sex: </label>
-        <input type="radio" asp-for="user_sex" value="1" checked>
-        <label for="sex1">Male</label>
-        <input type="radio" asp-for="user_sex" value="0">
-        <label for="sex2">Female</label>
-        @*<input asp-for="user_sex" />*@
-    </div>
-    <div>
-        <button asp-page-handler="Update">Update</button>
-    </div>
-    <div>@Model.message</div>
-</form>
-
+        <div class="tab"></div>
+        <input asp-for="user_name" placeholder="姓名" />
+        <div class="tab"></div>
+        <input asp-for="user_age" placeholder="年齡" />
+        <p></p>
+        <div class="sex">
+            <input type="radio" asp-for="user_sex" value="1" checked>
+            <label for="sex1">Male&#160;</label>
+            <input type="radio" asp-for="user_sex" value="0">
+            <label for="sex2">Female</label>
+        </div>
+        <button class="submit" asp-page-handler="Update">Update</button>
+    </form>
+</div>
+ 
 @section scripts{
     <partial name="_ValidationScriptsPartial" />
 }

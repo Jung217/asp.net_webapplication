@@ -8,10 +8,11 @@
         margin: 7px;
         border: 1px solid #ccc;
         float: left;
-        width: 210px;
         width: 250px;
+        height: 335px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         text-align: center;
+        border-radius:5%;
     }
 
         div.gallery:hover {
@@ -64,7 +65,7 @@
     .button-24:active {
         opacity: .5;
     }
-    
+
     .button-52 {
       font-size: 16px;
       font-weight: 200;
@@ -103,7 +104,7 @@
         padding: 13px 50px 13px;
       }
     }
-    </style>
+</style>
 
 <div>
 	<h1>Image Gallery</h1>
@@ -119,11 +120,19 @@
         for (int i = 0; i < Model.dataTable.Rows.Count; i++)
         {
             <div class="gallery">
-                @* <img class="demo cursor" src="data:image/jpeg;base64,@Model.dataTable.Rows[i][5].ToString()" style="width:100px;height:100px;" onclick="currentSlide(@(i+1))" alt="@Model.dataTable.Rows[i][1].ToString()<br>@Model.dataTable.Rows[i][2].ToString()"> *@
                 <a target="_blank" href="/Index"><img src="~/Pictures/@Model.dataTable.Rows[i][4].ToString()" alt="Cinque Terre" ></a>
                 <div class="desc"><Strong><p style="height: 10px;">  @Model.dataTable.Rows[i][1].ToString() </p></Strong></div>
                 <form method="post">
-                    <button class="button-24" asp-page-handler="Add">Delete</button>
+					<p style="text-align:center;">
+						Form <strong>
+                                <b>
+                                    <i>
+                                    @Model.dataTable.Rows[i][5].ToString()
+                                    </i>
+                                 </b>
+                             </strong>
+					</p>
+					<button class="button-24" asp-page-handler="Add">Delete 🗑︎</button>
                 </form>
             </div>
         }

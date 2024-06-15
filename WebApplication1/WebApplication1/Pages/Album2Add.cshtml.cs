@@ -26,9 +26,13 @@ namespace WebApplication1.Pages
 
         [BindProperty]
         public IFormFile picture_filename { get; set; }
+        [BindProperty]
+        public string picture_from { get; set; }
 
         [BindProperty]
         public string message { get; set; }
+        [BindProperty]
+        public string user_id { get; set; }
 
         private IWebHostEnvironment _environment;
 
@@ -40,6 +44,8 @@ namespace WebApplication1.Pages
         public void OnGet()
         {
             picture_time = DateTime.Now;
+            user_id = HttpContext.Session.GetString("userId");
+            if (user_id == null) picture_from = "Guest";
         }
         public async Task OnPostAsync()
         {
@@ -63,7 +69,8 @@ namespace WebApplication1.Pages
                     command.Parameters.AddWithValue("time", picture_time.ToString());
                     command.Parameters.AddWithValue("filename", picture_filename.FileName);
                     command.Parameters.AddWithValue("data", base64);
-                    command.ExecuteNonQuery();
+					command.Parameters.AddWithValue("from", picture_from);
+					command.ExecuteNonQuery();
 
                     transaction.Commit();
                     ok = true;
@@ -76,7 +83,7 @@ namespace WebApplication1.Pages
 
                 connection.Close();
 
-                if (ok) Response.Redirect("Album");
+                if (ok) Response.Redirect("Gallery");
                 else message = "Faild to add new picture.";
             }
         }

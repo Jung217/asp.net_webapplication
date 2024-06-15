@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Data.Sqlite;
@@ -34,7 +35,17 @@ namespace WebApplication1.Pages
 
         public void OnGet(string id)
         {
-            ShowUser(id);
+            try
+            {
+                user_id = HttpContext.Session.GetString("userId");
+                if (user_id != "admin") Response.Redirect("Login3");
+                ShowUser(id);
+            }
+            catch
+            {
+                Response.Redirect("Login3");
+            }
+
         }
 
         private void ShowUser(string id)

@@ -24,7 +24,8 @@ namespace WebApplication1.Pages
         public void OnGet()
         {
             user_id = HttpContext.Session.GetString("userId");
-            if (HttpContext.Session.GetString("userId") == null) Response.Redirect("Login3");
+            if (user_id == null) Response.Redirect("Login3");
+            else if (user_id != "admin") Response.Redirect("Usera");
             else
             {
                 string user_name = HttpContext.Session.GetString("userName");
