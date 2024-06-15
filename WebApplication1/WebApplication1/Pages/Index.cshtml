@@ -1,0 +1,45 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "志融 の Web page";
+}
+<style>
+    @@keyframes anforh2 {
+        0%{color: crimson;}
+        16%{color: orange;}
+        33%{color: yellow}
+        48%{color: green;}
+        67%{color:blue}
+        83%{color: darkblue}
+        100%{color:purple}
+    }
+
+    .h1t{
+        animation-name: anforh2;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    #boxshadow1 {
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        background-color: #fffbc7;
+        box-shadow: 10px 10px;
+        margin-top:20px;
+        margin-bottom:30px;
+    }
+</style>
+<img style="width:700px; float: right; border-radius: 1%;" src="https://live.staticflickr.com/65535/52054157046_a1701c3386_b.jpg" />
+<h1 class="h1t">志融 の Web page</h1>
+
+<div id="boxshadow1" >
+	<Strong><i><p style="display:inline;">為了期末作業，此網站因蘊而生</p></i></Strong>
+	<p><a href="/list">See More</a></p>
+</div>
+<div style="margin-left:5px;">
+    <p><strong>Contact Author</strong></p>
+    <a href="mailto:alex24922665@gamil.com">
+        <img style="border-radius: 50%;" alt="Avatar" src="https://live.staticflickr.com/65535/52056356816_0b119f47d3.jpg" width="80">
+    </a>
+</div>

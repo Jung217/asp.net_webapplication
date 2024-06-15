@@ -1,0 +1,131 @@
+﻿@page
+@model WebApplication1.Pages.GalleryModel
+@{
+	ViewData["Title"] = "Image Gallery";
+}
+<style>
+    div.gallery {
+        margin: 7px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 210px;
+        width: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+    }
+
+        div.gallery:hover {
+            border: 1px solid red;
+        }
+
+        div.gallery img {
+            width: 200px;
+            height: 180px;
+        }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .button-24 {
+        background: #FF4742;
+        border: 1px solid #FF4742;
+        border-radius: 6px;
+        box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 16px;
+        min-height: 40px;
+        outline: 0;
+        padding: 12px 14px;
+        text-align: center;
+        text-rendering: geometricprecision;
+        text-transform: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: middle;
+        margin-bottom: 10px;
+    }
+
+    .button-24:hover,
+    .button-24:active {
+        background-color: initial;
+        background-position: 0 0;
+        color: #FF4742;
+    }
+
+    .button-24:active {
+        opacity: .5;
+    }
+    
+    .button-52 {
+      font-size: 16px;
+      font-weight: 200;
+      letter-spacing: 1px;
+      padding: 13px 20px 13px;
+      outline: 0;
+      border: 1px solid black;
+      cursor: pointer;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      margin-bottom:15px;
+    }
+
+    .button-52:after {
+      content: "";
+      background-color: #ffe54c;
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      top: 7px;
+      left: 7px;
+      transition: 0.2s;
+    }
+
+    .button-52:hover:after {
+      top: 0px;
+      left: 0px;
+    }
+
+    @@media (min-width: 768px) {
+      .button-52 {
+        padding: 13px 50px 13px;
+      }
+    }
+    </style>
+
+<div>
+	<h1>Image Gallery</h1>
+    <hr/>
+    <form method="post">
+        <button class ="button-52" asp-page-handler="Add">+ New Picture</button>
+    </form>
+</div>
+
+<div>
+    @if (Model.dataTable != null)
+    {
+        for (int i = 0; i < Model.dataTable.Rows.Count; i++)
+        {
+            <div class="gallery">
+                @* <img class="demo cursor" src="data:image/jpeg;base64,@Model.dataTable.Rows[i][5].ToString()" style="width:100px;height:100px;" onclick="currentSlide(@(i+1))" alt="@Model.dataTable.Rows[i][1].ToString()<br>@Model.dataTable.Rows[i][2].ToString()"> *@
+                <a target="_blank" href="/Index"><img src="~/Pictures/@Model.dataTable.Rows[i][4].ToString()" alt="Cinque Terre" ></a>
+                <div class="desc"><Strong><p style="height: 10px;">  @Model.dataTable.Rows[i][1].ToString() </p></Strong></div>
+                <form method="post">
+                    <button class="button-24" asp-page-handler="Add">Delete</button>
+                </form>
+            </div>
+        }
+    }
+</div>

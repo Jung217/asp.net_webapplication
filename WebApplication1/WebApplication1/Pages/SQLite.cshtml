@@ -1,0 +1,14 @@
+﻿@page
+@model WebApplication1.Pages.SQLiteModel
+@{
+}
+
+<form method="post">
+    <button asp-page-handler="Create">Create</button><br />
+    <button asp-page-handler="Insert">Insert</button><br />
+    <button asp-page-handler="Update">Update</button><br />
+    <button asp-page-handler="Select">Select</button><br />
+    <button asp-page-handler="Delete">Delete</button><br />
+    <button asp-page-handler="Transaction">Transaction</button>
+    <div>@Model.message</div>
+</form>

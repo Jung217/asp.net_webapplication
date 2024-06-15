@@ -1,0 +1,124 @@
+﻿@page
+@model WebApplication1.Pages.Login3Model
+@{
+    ViewData["Title"] = "Login";
+}
+
+<style>
+    .header {
+        display: inline-block;
+        width: 70px;
+    }
+
+    button {
+        width: 80px;
+    }
+</style>
+
+@* <form method="post">
+    <div>
+        <span class="header">User ID:</span>
+        <input asp-for="user_id" type="text" />
+        <span asp-validation-for="user_id" style="color:red;"></span>
+    </div>
+    <div style="padding-top:10px;">
+        <span class="header">Password:</span>
+        <input asp-for="user_password" type="password" />
+        <span asp-validation-for="user_password" style="color:red;"></span>
+    </div>
+    <div style="padding-top:10px;">
+        <button asp-page-handler="Login">Login</button>
+    </div>
+</form> 
+<div>@Model.message</div>*@
+
+<style>
+    body {
+        background-color: white;
+    }
+
+    #user_id, #user_password, #fullname, #comfirm_password, #username2, #password2 {
+        width: 250px;
+        height: 35px;
+        margin: 15px;
+        color: #df5334;
+    }
+
+    h5 {
+        margin: 20px;
+        color: #a3a2a3;
+    }
+
+        h5:hover {
+            color: black;
+        }
+
+    #container1 {
+        margin: 50px;
+        padding: 10px;
+        width: 400px;
+        height: 400px;
+        background-color: white;
+        border-radius: 5px;
+        border-top: 10px solid #df5334;
+        box-shadow: 0 0px 70px rgba(0, 0, 0, 0.1);
+
+        position: relative;
+        margin: auto;
+        top: 100px;
+        text-align:center;
+    }
+
+    .submit {
+        color: white;
+        background: #df5334;
+        width: 200px;
+        height: 30px;
+        margin: 15px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 0px;
+    }
+
+        .submit:hover {
+            background: #db6937;
+        }
+
+    #container2 {
+        visibility: hidden;
+        height: 350px;
+    }
+
+    input {
+        padding: 5px;
+        border: none;
+        border: solid 1px #ccc;
+        border-radius: 5px;
+    }
+</style>
+
+<div id="container1">
+
+    <div class="login">
+
+        <h3 style="margin: 20px; color: #df5334;">登入 Login</h3>
+        <div class="tab"></div>
+        <form method="post">
+            <input asp-for="user_id" type="text" placeholder="帳號" />
+            <span asp-validation-for="user_id" style="color:red;"></span>
+            <div class ="tab"></div>
+            <input asp-for="user_password" type="password" placeholder="密碼" />
+            <span asp-validation-for="user_password" style="color:red;"></span>
+            <div class="tab"></div>
+            <button class="submit" asp-page-handler="Login">Login</button>
+        </form>
+
+		<h5><a href ="/UserAdd">註冊帳號</a></h5>
+
+    </div>
+</div>
+
+
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
