@@ -20,7 +20,7 @@ namespace WebApplication1.Pages
             connection.Open();
 
             var command = connection.CreateCommand();
-            command.CommandText = @"SELECT * FROM [Picture2]";
+            command.CommandText = @"SELECT * FROM [Picture4]";
             var reader = command.ExecuteReader();
             dataTable = new DataTable();
             dataTable.Load(reader);

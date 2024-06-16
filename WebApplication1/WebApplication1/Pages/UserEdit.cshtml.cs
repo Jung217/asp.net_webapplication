@@ -45,7 +45,6 @@ namespace WebApplication1.Pages
             {
                 Response.Redirect("Login3");
             }
-
         }
 
         private void ShowUser(string id)

@@ -44,6 +44,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FsbGVyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/GalleryEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FsbGVyeUVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/GalleryShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FsbGVyeVNob3cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

@@ -104,14 +104,41 @@
         padding: 13px 50px 13px;
       }
     }
+    .button-33 {
+        background-color: #c2fbd7;
+        border-radius: 100px;
+        box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+        color: green;
+        cursor: pointer;
+        display: inline-block;
+        font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+        padding: 7px 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 250ms;
+        border: 0;
+        font-size: 16px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+    .button-33:hover {
+        box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+        transform: scale(1.05) rotate(-1deg);
+    }
 </style>
 
 <div>
 	<h1>Image Gallery</h1>
-    <hr/>
+	<hr />
     <form method="post">
+        <p>
         <button class ="button-52" asp-page-handler="Add">+ New Picture</button>
+        <button asp-page-handler="To" class="button-52">SlideShow →</button>
+        </p>
     </form>
+    
 </div>
 
 <div>
@@ -120,19 +147,24 @@
         for (int i = 0; i < Model.dataTable.Rows.Count; i++)
         {
             <div class="gallery">
-                <a target="_blank" href="/Index"><img src="~/Pictures/@Model.dataTable.Rows[i][4].ToString()" alt="Cinque Terre" ></a>
-                <div class="desc"><Strong><p style="height: 10px;">  @Model.dataTable.Rows[i][1].ToString() </p></Strong></div>
                 <form method="post">
+                    <a  href="/GalleryShow?id=@Model.dataTable.Rows[i][0].ToString()"><img class="demo cursor" src="data:image/jpeg;base64,@Model.dataTable.Rows[i][6].ToString()"></a>
+                    @* <button asp-page-handler="Show" asp-route-id="@Model.dataTable.Rows[i][0].ToString()">TEST</button> *@
+                <div class="desc"><Strong><p style="height: 10px;">  @Model.dataTable.Rows[i][1].ToString() </p></Strong></div>
+                @* <form method="post"> *@
 					<p style="text-align:center;">
-						Form <strong>
-                                <b>
-                                    <i>
-                                    @Model.dataTable.Rows[i][5].ToString()
-                                    </i>
-                                 </b>
-                             </strong>
+						From <strong><b><i>@Model.dataTable.Rows[i][5].ToString()</i></b></strong>
 					</p>
-					<button class="button-24" asp-page-handler="Add">Delete 🗑︎</button>
+                    @if (Model.who == "ad")
+                    {
+                        <button class="button-24" asp-page-handler="Update" asp-route-id="@Model.dataTable.Rows[i][0].ToString()">Edit ✎</button>
+                        <button class="button-24" asp-page-handler="Delete" asp-route-id="@Model.dataTable.Rows[i][0].ToString()" onclick="if (!confirm('你確定嗎？')) return false;">Delete 🗑︎</button>
+                    }
+                    else
+                    {
+                        @* <button class="button-33" asp-page-handler="Download" asp-route-id="@Model.dataTable.Rows[i][0].ToString()">Download ⥥</button> *@
+                        <button onclick="location.href='/Gallery'" class="button-33" asp-page-handler="No"><a href="data:image/jpeg;base64,@Model.dataTable.Rows[i][6].ToString()" download="@Model.dataTable.Rows[i][4].ToString()">Download ⥥</a></button>
+                    }
                 </form>
             </div>
         }

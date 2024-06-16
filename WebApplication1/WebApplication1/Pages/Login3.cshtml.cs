@@ -18,13 +18,14 @@ namespace WebApplication1.Pages
         [Required(ErrorMessage = "帳號未輸入")]
         public string user_id { set; get; }
 
-        [BindProperty]
+		[BindProperty]
         [Required(ErrorMessage = "密碼未輸入")]
         public string user_password { set; get; }
 
         public void OnGet()
         {
-        }
+			if (HttpContext.Session.GetString("userId") != null) Response.Redirect("User");
+		}
 
         public void OnPostLogin()
         {

@@ -27,12 +27,10 @@ namespace WebApplication1.Pages
         [BindProperty]
         public IFormFile picture_filename { get; set; }
         [BindProperty]
-        public string picture_from { get; set; }
+        public string picture_who { get; set; }
 
         [BindProperty]
         public string message { get; set; }
-        [BindProperty]
-        public string user_id { get; set; }
 
         private IWebHostEnvironment _environment;
 
@@ -44,8 +42,8 @@ namespace WebApplication1.Pages
         public void OnGet()
         {
             picture_time = DateTime.Now;
-            user_id = HttpContext.Session.GetString("userId");
-            if (user_id == null) picture_from = "Guest";
+            picture_who = HttpContext.Session.GetString("userId");
+            if (picture_who == null) picture_who = "Guest";
         }
         public async Task OnPostAsync()
         {
@@ -63,13 +61,13 @@ namespace WebApplication1.Pages
                 try
                 {
                     var command = connection.CreateCommand();
-                    command.CommandText = @"INSERT INTO Picture2 (title, description, time, filename, data) VALUES (@title, @description, @time, @filename, @data)";
+                    command.CommandText = @"INSERT INTO Picture4 (title, description, time, filename, who, data) VALUES (@title, @description, @time, @filename, @who, @data)";
                     command.Parameters.AddWithValue("title", picture_title);
                     command.Parameters.AddWithValue("description", picture_description);
                     command.Parameters.AddWithValue("time", picture_time.ToString());
                     command.Parameters.AddWithValue("filename", picture_filename.FileName);
+                    command.Parameters.AddWithValue("who", picture_who);
                     command.Parameters.AddWithValue("data", base64);
-					command.Parameters.AddWithValue("from", picture_from);
 					command.ExecuteNonQuery();
 
                     transaction.Commit();

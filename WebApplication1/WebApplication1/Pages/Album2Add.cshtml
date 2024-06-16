@@ -116,11 +116,12 @@
 <div class="form-style-5">
 	<form method="post" enctype="multipart/form-data">
 		<fieldset>
-			<legend><span class="number">1</span> Candidate Info</legend>
+			<legend><span class="number">1</span> Main Info</legend>
 			<input asp-for="picture_title" type="text" placeholder="Title">
 			<span asp-validation-for="picture_title" style="color:red;"></span>
 			<textarea asp-for="picture_description"  placeholder="Description"></textarea>
 			<input asp-for="picture_time" />
+			<input asp-for="picture_who" readonly />
 		</fieldset>
 		<fieldset>
 			<legend><span class="number">2</span> Image File</legend>
@@ -149,12 +150,16 @@
         <label style="width: 90px;">Filename: </label>
         <input asp-for="picture_filename" />
     </div>
+	<div>
+        <label style="width: 90px;">WHO: </label>
+        <input asp-for="picture_who" readonly />
+    </div>
     <div>
         <button asp-page-handler="Add">Add</button>
     </div>
     <div>@Model.message</div>
-</form> *@
-
+</form>
+ *@
 @section scripts{
     <partial name="_ValidationScriptsPartial" />
 }
