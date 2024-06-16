@@ -32,6 +32,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxidW1BZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/AnnouenceShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5ub3VlbmNlU2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Announce.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5ub3VuY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/AnnounceAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5ub3VuY2VBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/AnnounceUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5ub3VuY2VVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Download.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG93bmxvYWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -70,6 +86,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Login3.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/pop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccG9wLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Privacy.cshtml]

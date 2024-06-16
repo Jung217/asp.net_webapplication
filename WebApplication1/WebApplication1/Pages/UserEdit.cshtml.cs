@@ -35,6 +35,7 @@ namespace WebApplication1.Pages
 
         public void OnGet(string id)
         {
+            message = id;
             try
             {
                 user_id = HttpContext.Session.GetString("userId");

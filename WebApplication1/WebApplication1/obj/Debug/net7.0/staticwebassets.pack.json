@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\JavaScript.js"
     },
     {
+      "Id": "C:\\Users\\alex2\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\Pictures\\favicon.ico",
+      "PackagePath": "staticwebassets\\Pictures\\favicon.ico"
+    },
+    {
       "Id": "C:\\Users\\alex2\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\Pictures\\image1.jpg",
       "PackagePath": "staticwebassets\\Pictures\\image1.jpg"
     },
@@ -35,6 +39,18 @@
     {
       "Id": "C:\\Users\\alex2\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\Pictures\\image5.png",
       "PackagePath": "staticwebassets\\Pictures\\image5.png"
+    },
+    {
+      "Id": "C:\\Users\\alex2\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\Pictures\\pop.mp3",
+      "PackagePath": "staticwebassets\\Pictures\\pop.mp3"
+    },
+    {
+      "Id": "C:\\Users\\alex2\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\Pictures\\popcat1.png",
+      "PackagePath": "staticwebassets\\Pictures\\popcat1.png"
+    },
+    {
+      "Id": "C:\\Users\\alex2\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\Pictures\\popcat2.png",
+      "PackagePath": "staticwebassets\\Pictures\\popcat2.png"
     },
     {
       "Id": "C:\\Users\\alex2\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\Style.css",

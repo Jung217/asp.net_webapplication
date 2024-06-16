@@ -1,0 +1,65 @@
+﻿@page
+@model WebApplication1.Pages.AnnounceUpdateModel
+@{
+	ViewData["Title"] = "Announce Update";
+}
+<style>
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        width: 100%;
+        height: 275px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+    .ddd {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+</style>
+
+
+<div class="ddd">
+    <h2>New Announce</h2>
+    <form method="post">
+        <input type=text asp-for="ann_title"  />
+        <span asp-validation-for="ann_title" style="color:red;"></span>
+        <div class="tab"></div>
+        <textarea asp-for="ann_content" ></textarea>
+        <span asp-validation-for="ann_content" style="color:red;"></span>
+        <div class="tab"></div>
+        <input type=text asp-for="ann_time" readonly />
+        <div class="tab"></div>
+        <input type=text asp-for="ann_who" readonly />
+		<input asp-page-handler="Update" type="submit" value="Update">@* asp-route-id="@Model.id" *@
+    </form>
+</div>

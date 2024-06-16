@@ -1,0 +1,114 @@
+﻿@page
+@model WebApplication1.Pages.popModel
+@{
+    ViewData["Title"] = "POP CAT";
+}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" integrity="sha512-Cv93isQdFwaKBV+Z4X8kaVBYWHST58Xb/jVOcV9aRsGSArZsgAnFIhMpDoMDcFNoUtday1hdjn0nGp3+KZyyFw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            background: linear-gradient(to right, #ffefba, #ffffff);
+            overflow-y: hidden;
+            font-family: Nunito, sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            font-size: 6.5em;
+            margin: 1% 0% -5% 0%;
+            font-family: Nunito, sans-serif;
+            -webkit-text-stroke: 2px black;
+            color: white;
+        }
+        #score{
+            font-size: 4em;
+            font-family: Nunito, sans-serif;
+            -webkit-text-stroke: 2px black;
+            color: white;
+            margin-bottom: -6%;
+        }
+        button{
+            margin-top: 4%;
+            font-size: 25px;
+            background-color: white;
+            padding: 10px 250px 10px 250px;
+            border: none;
+            outline: none;
+        }
+        @@media only screen and (max-width: 480px) {
+            #popcat1 {
+                width: 450px;
+                margin-top: -13%;
+            }
+            h1{
+                font-size: 4.5em;
+                margin-bottom: -20%;
+            }
+            img{
+                height: 500px;
+            }
+            html{
+                overflow-y: hidden;
+            }
+            body{
+                overflow:hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+    <div class="container">
+        <h1>POPCAT</h1>
+        <p id="score">@Model.score</p>
+        <img src="/Pictures/popcat1.png" id="popcat1" height="600px">
+    </div>
+	</form>
+    <script>
+        var img = document.getElementById("popcat1");
+        var count = document.getElementById("score");
+        var score = @Model.score;
+        var audio = new Audio("/Pictures/pop.mp3");
+
+        // Mouse click event
+        img.addEventListener("mousedown", function () {
+            increaseScore();
+            img.src = '/Pictures/popcat2.png';
+            audio.play();
+        });
+
+        img.addEventListener("mouseup", function () {
+            img.src = '/Pictures/popcat1.png';
+        });
+
+        // Touch event
+        img.addEventListener("touchstart", function () {
+            increaseScore();
+            img.src = '/Pictures/popcat2.png';
+            audio.play();
+        });
+
+        img.addEventListener("touchend", function () {
+            img.src = '/Pictures/popcat1.png';
+        });
+
+        function increaseScore() {
+            score++;
+            count.innerHTML = score;
+        }
+    </script>
+</body>
+</html>
