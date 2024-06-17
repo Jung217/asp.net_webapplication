@@ -9,129 +9,133 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebApplication1
 build_property.RootNamespace = WebApplication1
-build_property.ProjectDir = C:\Users\alex2\Desktop\WebApplication1\WebApplication1\
+build_property.ProjectDir = C:\Users\alex2\Desktop\NQU\asp.net_webapplication\WebApplication1\WebApplication1\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\alex2\Desktop\WebApplication1\WebApplication1
+build_property.MSBuildProjectDirectory = C:\Users\alex2\Desktop\NQU\asp.net_webapplication\WebApplication1\WebApplication1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Album.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/Album.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxidW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Album2.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/Album2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxidW0yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Album2Add.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/Album2Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxidW0yQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/AlbumAdd.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/AlbumAdd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxidW1BZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/AnnouenceShow.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/AnnouenceShow.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5ub3VlbmNlU2hvdy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Announce.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/Announce.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5ub3VuY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/AnnounceAdd.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/AnnounceAdd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5ub3VuY2VBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/AnnounceUpdate.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/AnnounceUpdate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5ub3VuY2VVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Download.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/Download.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG93bmxvYWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Error.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Gallery.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/Gallery.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FsbGVyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/GalleryEdit.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/GalleryEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FsbGVyeUVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/GalleryShow.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/GalleryShow.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FsbGVyeVNob3cuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Index.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/list.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/list.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Login.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Login2.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/Login2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Login3.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/Login3.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/pop.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/pop.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccG9wLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Privacy.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/PostTest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdFRlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Shared/_Layout.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Shared/_Layout2.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/Shared/_Layout2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/SQLite.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/SQLite.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU1FMaXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/User.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/User.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/Usera.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/Usera.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/UserAdd.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/UserAdd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/UserEdit.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/UserEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/_ViewImports.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alex2/Desktop/WebApplication1/WebApplication1/Pages/_ViewStart.cshtml]
+[C:/Users/alex2/Desktop/NQU/asp.net_webapplication/WebApplication1/WebApplication1/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

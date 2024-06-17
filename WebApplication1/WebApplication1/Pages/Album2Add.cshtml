@@ -120,7 +120,7 @@
 			<input asp-for="picture_title" type="text" placeholder="Title">
 			<span asp-validation-for="picture_title" style="color:red;"></span>
 			<textarea asp-for="picture_description"  placeholder="Description"></textarea>
-			<input asp-for="picture_time" />
+			<input type=text asp-for="picture_time" readonly/>
 			<input asp-for="picture_who" readonly />
 		</fieldset>
 		<fieldset>

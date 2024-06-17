@@ -70,10 +70,11 @@ namespace WebApplication1.Pages
             try
             {
                 var command = connection.CreateCommand();
-                command.CommandText = @"UPDATE Picture4 SET title = @title, description = @description WHERE id = @id";
+                command.CommandText = @"UPDATE Picture4 SET title = @title, description = @description WHERE time = @time";
                 command.Parameters.AddWithValue("title", picture_title);
                 command.Parameters.AddWithValue("description", picture_description);
-                command.ExecuteNonQuery();
+				command.Parameters.AddWithValue("time", picture_time);
+				command.ExecuteNonQuery();
 
                 transaction.Commit();
                 ok = true;

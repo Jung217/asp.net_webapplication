@@ -144,14 +144,12 @@
 <div>
     @if (Model.dataTable != null)
     {
-        for (int i = 0; i < Model.dataTable.Rows.Count; i++)
+        @* for (int i = 0; i < Model.dataTable.Rows.Count; i++)
         {
             <div class="gallery">
                 <form method="post">
                     <a  href="/GalleryShow?id=@Model.dataTable.Rows[i][0].ToString()"><img class="demo cursor" src="data:image/jpeg;base64,@Model.dataTable.Rows[i][6].ToString()"></a>
-                    @* <button asp-page-handler="Show" asp-route-id="@Model.dataTable.Rows[i][0].ToString()">TEST</button> *@
                 <div class="desc"><Strong><p style="height: 10px;">  @Model.dataTable.Rows[i][1].ToString() </p></Strong></div>
-                @* <form method="post"> *@
 					<p style="text-align:center;">
 						From <strong><b><i>@Model.dataTable.Rows[i][5].ToString()</i></b></strong>
 					</p>
@@ -162,8 +160,28 @@
                     }
                     else
                     {
-                        @* <button class="button-33" asp-page-handler="Download" asp-route-id="@Model.dataTable.Rows[i][0].ToString()">Download ⥥</button> *@
                         <button onclick="location.href='/Gallery'" class="button-33" asp-page-handler="No"><a href="data:image/jpeg;base64,@Model.dataTable.Rows[i][6].ToString()" download="@Model.dataTable.Rows[i][4].ToString()">Download ⥥</a></button>
+                    }
+                </form>
+            </div>
+        } *@
+        for (int i = Model.dataTable.Rows.Count; i > 0; i--)
+        {
+            <div class="gallery">
+                <form method="post">
+                    <a href="/GalleryShow?id=@Model.dataTable.Rows[i-1][0].ToString()"><img class="demo cursor" src="data:image/jpeg;base64,@Model.dataTable.Rows[i-1][6].ToString()"></a>
+                    <div class="desc"><Strong><p style="height: 10px;">  @Model.dataTable.Rows[i-1][1].ToString() </p></Strong></div>
+                    <p style="text-align:center;">
+                        From <strong><b><i>@Model.dataTable.Rows[i-1][5].ToString()</i></b></strong>
+                    </p>
+                    @if (Model.who == "ad")
+                    {
+                        <button class="button-24" asp-page-handler="Update" asp-route-id="@Model.dataTable.Rows[i-1][0].ToString()">Edit ✎</button>
+                        <button class="button-24" asp-page-handler="Delete" asp-route-id="@Model.dataTable.Rows[i-1][0].ToString()" onclick="if (!confirm('你確定嗎？')) return false;">Delete 🗑︎</button>
+                    }
+                    else
+                    {
+                        <button onclick="location.href='/Gallery'" class="button-33" asp-page-handler="No"><a href="data:image/jpeg;base64,@Model.dataTable.Rows[i-1][6].ToString()" download="@Model.dataTable.Rows[i-1][4].ToString()">Download ⥥</a></button>
                     }
                 </form>
             </div>

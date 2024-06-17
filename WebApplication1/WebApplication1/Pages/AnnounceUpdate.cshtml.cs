@@ -54,7 +54,7 @@ namespace WebApplication1.Pages
             using (var reader = command.ExecuteReader())
             {
                 reader.Read();
-                ann_id = reader[0].ToString();
+                //ann_id = reader[0].ToString();
                 ann_title = reader[1].ToString();
                 ann_content = reader[2].ToString();
                 ann_time = reader[3].ToString();
@@ -72,13 +72,12 @@ namespace WebApplication1.Pages
             try
             {
                 var command1 = connection.CreateCommand();
-                command1.CommandText = @"UPDATE Announce SET title = @title, content = @content, who = @who WHERE Id = @Id";
+                command1.CommandText = @"UPDATE Announce SET title = @title, content = @content, who = @who WHERE time = @time";
                 command1.Parameters.AddWithValue("title", ann_title);
                 command1.Parameters.AddWithValue("content", ann_content);
                 command1.Parameters.AddWithValue("who", ann_who);
-                command1.Parameters.AddWithValue("Id", BigInteger.Parse(id));
+                command1.Parameters.AddWithValue("time", ann_time);
                 command1.ExecuteNonQuery();
-                //message = command1.CommandText;
                 transaction.Commit();
                 ok = true;
             }
